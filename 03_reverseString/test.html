@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        const reverseString = (string) => {
+            const fwdString = string.split('');
+            const rewString = fwdString.reverse();
+            let result = rewString.join('');
+            return result;
+        };
+
+    console.log(reverseString("12345 6789"));
+// psuedocode
+// take string and make array with element being each letter
+// then reverse array
+// then array.toString() - should work
+
+    </script>
+</body>
+</html>
