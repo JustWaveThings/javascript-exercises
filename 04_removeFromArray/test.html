@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // need a for loop to apply each argument to the array through one method
+            // const toArray =["a", 1];
+            const toArray = ["a", 1, "google", "five", 9];
+            const test = (toArray) => {
+                for (const item of toArray) {
+                    // need conditional to determine if element is an index or a string
+                    if (typeof(item) === "string") {
+                        console.log("string");
+                    } else { 
+                        console.log("not string");
+                    }
+                }
+            }
+         test(toArray);
+       
+    </script>
+</body>
+</html>
