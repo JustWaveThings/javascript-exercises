@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    const fibonacci = input => {
+        const fib = parseInt(input) > 0;
+        if (fib > 0) {
+            const fibArray = [];
+            let num = 0;
+            for (let i = 0; i <= input; i++) {
+                num = (i - 1) + (i - 2); // make fib sequence
+                console.log(num);
+                fibArray.push(num); // push items to array
+                console.log(fibArray);
+            }
+            return fibArray[input]; // return value of input[index]
+        } else {
+            return "OOPS";
+        };
+    };
+
+    console.log(fibonacci(3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
