@@ -23,13 +23,18 @@ const people = [
     yearOfDeath: 1941,
   },
 ];
-// const findTheOldest1 = people.sort((a, b) => {
-//   const lastP = a.yearOfDeath - a.yearOfBirth;
-//   const nextP = b.yearOfDeath - b.yearOfBirth;
-//   return lastP > nextP ? -1 : 1;
-// });
 
+// I need to iterate through the array, and for each element, see if the object contains key 'yearOfDeath". If it doesn't, I need to add a key value pair. then run the existing function code blocks on the amended array elements to return the oldest exactly like the first test.  I expect this code will also pass 3rd test without modification as the array will be fixed before evaluating who's the oldest.
+
+// people.forEach(element => (element['yearOfDeath'] === undefined) ? element. yearOfDeath = 2022 : false  );
+
+// people.forEach(element => console.log(element));
+
+
+
+// this works
 function findTheOldest(arr) {
+    arr.forEach(element => (element['yearOfDeath'] === undefined) ? element. yearOfDeath = 2022 : false  );
     arr.sort((a, b) => {
         const lastP = a.yearOfDeath - a.yearOfBirth;
         const nextP = b.yearOfDeath - b.yearOfBirth;
@@ -37,12 +42,15 @@ function findTheOldest(arr) {
     })
     return arr[0];
 };
-
-// console.log(findTheOldest1);
-// console.log(findTheOldest1[0]);
-console.log(findTheOldest(people));
+// console.log(findTheOldest(people));
 
 
 
-// Do not edit below this line
-// module.exports = findTheOldest;
+
+
+
+
+
+
+
+module.exports = findTheOldest;
